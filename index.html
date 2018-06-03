@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<title>Stockholms fotbollen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav id="menu">
+		<a href="djurgarden.html">Djurgården</a>
+		<a href="hammarby.html">Hammarby</a>
+		<a href="aik.html">AIK</a>
+	</nav>
+	<form name="form" id="form">
+		<p>Klicka i ditt favorit Stockholmslag!</p>
+		<input type="radio" name="vote" value="Aik" onclick="aik()"> AIK
+		<br>
+		<input type="radio" name="vote" value="Hammarby" onclick="hammarby()"> Hammarby
+		<br>
+		<input type="radio" name="vote" value="Djurgarden" onclick="djurgarden()"> Djurgården
+		<br>
+		<br>
+	</form>
+	<div class="tabell">
+		<script src="http://www2.svenskfotboll.se/widget.aspx?scr=table&amp;ftid=72152&amp;b1=%23233446&amp;f1=%23ffffff&amp;b2=%23acbfda&amp;f2=%23000000&amp;b3=%23ffffff&amp;f3=%23000000&amp;b4=%23ececec&amp;bo=%23dfdfdf&amp;s=1"></script>
+	</div>
+	<div class="match">
+		<script src="http://www2.svenskfotboll.se/widget.aspx?scr=cominginleague&amp;ftid=72152&amp;b1=%23233446&amp;f1=%23ffffff&amp;b2=%23acbfda&amp;f2=%23000000&amp;b3=%23ffffff&amp;f3=%23000000&amp;b4=%23ececec&amp;bo=%23dfdfdf&amp;nbr=8"></script>
+	</div>
+	<script>
+		function aik() {
+			document.body.style.backgroundColor = "#ffcd50";
+		}
+		function hammarby() {
+			document.body.style.backgroundColor = "#007A43";
+		}
+		function djurgarden() {
+			document.body.style.backgroundColor = "#1E3666";
+		}
+	</script>
+</body>
+</html>
