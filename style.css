@@ -14,7 +14,7 @@ body {
 #form {
 	color: white;
 	background-color: #003d8f;
-	float: right;
+	float: left;
 	margin: 30px;
 	padding: 20px;
 	border-radius: 10px;
@@ -42,7 +42,7 @@ body {
 }
 
 .tabell {
-  float: left;
+  float: right;
   margin-top: 40px;
   margin-bottom: 40px;
 }
